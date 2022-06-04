@@ -13,8 +13,11 @@
     var name = prompt('What is your name?')
 
     var play = confirm('Hello '+ name + ' Would you like to play?')
+    var replay = ''
 
-    if(play){
+    do {
+
+      if(play){
       var battle = confirm('Would you like to battle the Dragon?')
       if(battle){
         //battle
@@ -26,7 +29,17 @@
         //quit battle
         alert('COWARD!!!... Come back when you are brave enough.')
       }
+      }
+      else{
+        alert('Maybe next time.')
+      }
     }
+    while (replay == 1)
+
+    replay = prompt("Enter '1' to play again and '0' to quit")
+
+
+
   </script>
   
 </body>
