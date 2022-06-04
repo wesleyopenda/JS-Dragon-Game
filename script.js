@@ -2,7 +2,7 @@
     var name = prompt('What is your name?')
 
     var play = confirm('Hello '+ name + ' Would you like to play?')
-    var replay = ''
+    var replay = 1
 
     do {
 
@@ -19,11 +19,14 @@
         alert('COWARD!!!... Come back when you are brave enough.')
       }
       }
+     // dont want to play
       else{
         alert('Maybe next time.')
       }
+      replay = prompt("Enter '1' to play again and '0' to quit")
     }
+    
     while (replay == 1)
 
-    replay = prompt("Enter '1' to play again and '0' to quit")
+
 
